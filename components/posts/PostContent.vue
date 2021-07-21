@@ -1,9 +1,9 @@
 <template>
   <div>
-    <b-col md="4">
+    <b-col md="3">
     <b-card
       :title=title
-      img-src="https://picsum.photos/600/300/?image=25"
+      :img-src=image
       img-alt="Image"
       img-top
       tag="article"
@@ -43,5 +43,8 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<!--style scoped>
+  b-card {
+    position: left;
+  }
+</!--style>
