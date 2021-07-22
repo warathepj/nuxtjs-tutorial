@@ -1,5 +1,4 @@
 <template>
-  <div>
     <b-col md="3">
     <b-card
       :title=title
@@ -7,17 +6,17 @@
       img-alt="Image"
       img-top
       tag="article"
-      style="max-width: 40rem"
+      style="max-width: 20rem"
       class="mb-2"
     >
       <b-card-text>
         {{ content }}        
       </b-card-text>
 
-      <b-button href="#" variant="primary">Reading</b-button>
+      <nuxt-link class="btn btn-success" :to="postLink">Reading</nuxt-link>
+
     </b-card>
     </b-col>
-  </div>
 </template>
 
 <script>
@@ -38,13 +37,22 @@ export default {
     image: {
       type: String,
       required: true
+    },
+    isAdmin: {
+      type: Boolean,
+      required: true
+    }
+  },
+  computed: {
+    postLink() {
+      return this.isAdmin ? '/admin/post/'+this.id : '/post/'+this.id
     }
   }
 }
 </script>
 
-<!--style scoped>
-  b-card {
-    position: left;
-  }
-</!--style>
+// <!--style scoped>
+//   b-card {
+//     position: left;
+//   }
+// </!--style-->
