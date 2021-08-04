@@ -1,10 +1,12 @@
 <template>
-  <h2>Hello Admin Page</h2>
+  <PostList isAdmin/>
 </template>
 
 <script>
+import PostList from '@/components/posts/PostList'
 export default {
-
+  layout: "coreLayout",
+  components: { PostList }
 }
 </script>
 

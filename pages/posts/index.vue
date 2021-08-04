@@ -1,40 +1,20 @@
 <template>
-  <b-container fluid="md">
+  <b-container fluid>
     <Header />
-      <b-row class="py-5">
-
-        <PostContent title="travel elephant home" content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" image="@/assets/image/2.jpg" />
-        <PostContent 
-          title="sea travel" 
-          content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
-          image="@/assets/image/4.jpg" 
-        />
-        
-        <PostContent
-          title="Farming" 
-          content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
-          image="@/assets/image/4.jpg" 
-        />
-
-        <PostContent 
-          title="Temple travel" 
-          content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
-          image="@/assets/image/4.jpg" 
-        />
-      </b-row>
+    <PostList />
   
   </b-container>
 </template>
 
 <script>
 import Header from '@/components/posts/Header.vue'
-import PostContent from '@/components/posts/PostContent.vue'
+import PostList from '@/components/posts/PostList.vue'
 export default {
   layout: 'coreLayout',
   components: {
     Header,
-    PostContent,
-  },
+    PostList
+  }
 }
 </script>
 

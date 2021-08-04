@@ -1,26 +1,36 @@
 <template>
   <b-row class="py-5">
 
-        <PostContent id="1" title="travel elephant home" content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" image="@/assets/image/2.jpg" />
+        <PostContent 
+          id="1" 
+          title="travel elephant home" 
+          content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
+          image="@/assets/image/2.jpg" 
+          :isAdmin=isAdmin
+        />
         <PostContent 
           id="2"
           title="sea travel" 
           content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
           image="@/assets/image/1.jpg" 
+          :isAdmin=isAdmin
+
         />
         
         <PostContent
           id="3"
           title="Farming" 
           content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
-          image="@/assets/image/2.jpg" 
+          image="@/assets/image/2.jpg"
+          :isAdmin=isAdmin 
         />
 
         <PostContent 
           id="4"
           title="Temple travel" 
           content="lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum deleniti numquam quae nemo doloremque voluptates illo ratione iste impedit voluptatum nesciunt fuga, eligendi officiis. Totam id et cum dignissimos!" 
-          image="@/assets/image/4.jpg" 
+          image="@/assets/image/4.jpg"
+          :isAdmin=isAdmin 
         />
       </b-row>
 </template>

@@ -40,12 +40,13 @@ export default {
     },
     isAdmin: {
       type: Boolean,
-      required: true
+      required: false
     }
   },
   computed: {
     postLink() {
       return this.isAdmin ? '/admin/post/'+this.id : '/post/'+this.id
+      
     }
   }
 }
